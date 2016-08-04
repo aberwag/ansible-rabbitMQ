@@ -1,0 +1,8 @@
+
+rabbitmq_version: 3.6.4-1
+
+users:
+  - name: admin
+    password: admin
+
+disable_guest: true

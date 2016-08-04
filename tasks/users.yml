@@ -1,0 +1,10 @@
+- name: add user {{ item.name }}
+  rabbitmq_user:
+    user: '{{ item.name }}'
+    password: '{{ item.password }}''
+    tags: 'administrator'
+    vhost: '/'
+    configure_priv: '.*'
+    write_priv: '.*'
+    read_priv: '.*'
+    state: present
